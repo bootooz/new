@@ -95,6 +95,7 @@ p{
 }
 
 .header{
+	position: relative;
 	color:#fff;
 	width: 90%;
 	height: 108px;
@@ -234,3 +235,94 @@ p{
 .social ul li:last-child{
 	margin-right: 0;
 }
+
+.nav{
+	position: absolute;
+	bottom: 0;
+}
+.nav ul li{
+	float: left;
+	list-style: none;
+}
+.nav ul li a{
+	position: relative;
+	display: block;
+	height: 30px;
+	padding: 5px 12px 0px 26px;
+	background: #333562;
+	font-size: 15px;
+	color: #fff;
+	border-right: 1px solid #28294c;
+	text-decoration: none;
+}
+.nav ul li a:hover{
+	background: #5d99fe;
+}
+.nav ul li a:active{
+	background: #5d99fe;
+}
+
+.nav ul li a .m1{
+	position: absolute;
+	left: 8px;
+	top: 7px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/icon/flag.png) no-repeat;
+}
+.nav ul li a .m2{
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/icon/people.png) no-repeat;
+}
+.nav ul li a .m3{
+	position: absolute;
+	left: 5px;
+	top: 8px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/icon/star.png) no-repeat;
+}
+.nav ul li a .m4{
+	position: absolute;
+	left: 6px;
+	top: 8px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/icon/photos.png) no-repeat;
+}
+.nav ul li a .m5{
+	position: absolute;
+	left: 9px;
+	top: 8px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/icon/vilka.png) no-repeat;
+}
+.nav ul li a .m6{
+	position: absolute;
+	left: 6px;
+	top: 9px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/icon/clock.png) no-repeat;
+}
+.nav ul li a .m7{
+	position: absolute;
+	left: 6px;
+	top: 10px;
+	display: block;
+	width: 19px;
+	height: 19px;
+	background: url(../img/icon/card.png) no-repeat;
+}
+

@@ -95,28 +95,65 @@ p{
 }
 
 .header{
+	color:#fff;
 	width: 90%;
 	height: 108px;
 	background: rgba(0,0,0,0.38);
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .logo{
-	width: 18.3%;
+	width: 25.2%;
 	height: 100%;
-	background: #ccc;
 	float: left;
 }
 
+.img__block{
+	width: 33%;
+	min-width: 120px;
+	height: 100%;
+	float: left;
+}
+
+.logo a{
+	display: block;
+	margin: 10px;
+}
+
+.logo img{
+	max-width: 105px;
+}
+
+.text__block{
+	width: 163px;
+	height: 100%;
+	float: left;
+	padding-top: 27px;
+}
+
+.text__block h1{
+	font-size: 37px;
+	line-height: 35px;
+	margin-bottom: -5px;
+}
+
+.text__block span{
+	font-size: 11.5px;
+}
+
+
 .center{
-	width: 49%;
+	width: 52.6%;
 	height: 100%;
 	background: #ccc;
 	float: left;
+	padding-top: 30px;
+	overflow: hidden;
 }
 
 .contacts{
-	width: 32.7%;
+	width: 22.2%;
 	height: 100%;
 	background: #ccc;
 	float: left;

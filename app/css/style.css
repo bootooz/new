@@ -16,11 +16,7 @@ body {
 	font: 100%/1.3em segoe ui, tahoma, OpenSansL, Georgia, Helvetica, sans-serif;
 	color: #000;
 }
-p{
-	font-size: 50px;
-	line-height: 65px;
-	text-align: center;
-}
+
 
 
 .container {
@@ -97,7 +93,7 @@ p{
 .header{
 	position: relative;
 	color:#fff;
-	width: 90%;
+	width: 95%;
 	height: 108px;
 	background: rgba(0,0,0,0.38);
 	margin: 0 auto;
@@ -105,15 +101,13 @@ p{
 }
 
 .logo{
-	width: 25.2%;
-	min-width: 320px;
+	width: 25%;
 	height: 100%;
 	float: left;
 }
 
 .img__block{
-	width: 33%;
-	min-width: 120px;
+	width: 40%;
 	height: 100%;
 	float: left;
 }
@@ -151,7 +145,7 @@ p{
 }
 
 .center{
-	width: 70.8%;
+	width: 75%;
 	height: 100%;
 	float: left;
 	padding-top: 30px;
@@ -233,7 +227,7 @@ p{
 	list-style: none;
 }
 .social ul li:last-child{
-	margin-right: 0;
+	margin-right: 10px;
 }
 
 .nav{
@@ -326,3 +320,42 @@ p{
 	background: url(../img/icon/card.png) no-repeat;
 }
 
+.header__content .container{
+	font-size: 39px;
+	line-height: 55px;
+	background: none;
+	color:#a1c4ff;
+	text-align: center;
+}
+.header__content span{
+	color:#cee0ff;
+}
+
+@media screen and (max-width: 1240px) {
+	/*For screen and width <= 1240px*/
+	.text__block h1{
+		font-size: 32px;
+		line-height: 32px;
+		margin-bottom: -5px;
+	}
+
+	.text__block span{
+		font-size: 10px;
+	}
+
+	.img__block{
+		width: 33%;
+		height: 100%;
+		float: left;
+	}
+
+	.logo a{
+		display: block;
+		margin:;
+	}
+
+	.logo img{
+		max-width: 80px;
+	}
+	
+}

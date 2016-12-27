@@ -1,0 +1,123 @@
+/*---------Mobile first set + greed--------*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+:focus{
+	outline: none;
+}
+header, nav{
+	display: block;
+}
+body {
+	font: 100%/1.3em segoe ui, tahoma, OpenSansL, Georgia, Helvetica, sans-serif;
+	color: #000;
+}
+p{
+	font-size: 50px;
+	line-height: 65px;
+	text-align: center;
+}
+
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+	background: url(../img/photo/head_bg.jpg) no-repeat;
+}
+
+.container .cols {
+	float: left;
+	//margin: 0 0 1em;
+	padding: 0 1em;
+}
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+
+.row:after,
+.container:after,
+.clear:after {
+	clear:both;
+}
+
+.container .cols.col-1,
+.container .cols.col-2,
+.container .cols.col-3, 
+.container .cols.col-4,
+.container .cols.col-5, 
+.container .cols.col-6, 
+.container .cols.col-7, 
+.container .cols.col-8, 
+.container .cols.col-9, 
+.container .cols.col-10, 
+.container .cols.col-11,
+.container .cols.col-12 {width: 100%;}
+
+/*---------You're code--------*/
+
+@media screen and (min-width: 600px) {
+	/*For screen and width >= 600px*/
+	.container .cols.col-1 {width: 8.333333333%;}
+	.container .cols.col-2 {width: 16.666666666%;}
+	.container .cols.col-3 {width: 25%}
+	.container .cols.col-4 {width: 33.333333333%;}
+	.container .cols.col-5 {width: 41.666666667%;}
+	.container .cols.col-6 {width: 50%;}
+	.container .cols.col-7 {width: 58.333333333%;}
+	.container .cols.col-8 {width: 66.666666667%;}
+	.container .cols.col-9 {width: 75%;}
+	.container .cols.col-10 {width: 83.333333333%;}
+	.container .cols.col-11 {width: 91.666666667%;}
+	.container .cols.col-12 {width: 100%;}
+	
+}
+
+/*---------You're code-------*/
+
+.head{
+	width: 100%;
+	height: 666px;
+	background: url(../img/photo/head_bg.jpg) no-repeat;
+	background-size: cover;
+	padding-top: 17px;
+}
+
+.header{
+	width: 90%;
+	height: 108px;
+	background: rgba(0,0,0,0.38);
+	margin: 0 auto;
+}
+
+.logo{
+	width: 18.3%;
+	height: 100%;
+	background: #ccc;
+	float: left;
+}
+
+.center{
+	width: 49%;
+	height: 100%;
+	background: #ccc;
+	float: left;
+}
+
+.contacts{
+	width: 32.7%;
+	height: 100%;
+	background: #ccc;
+	float: left;
+}

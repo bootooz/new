@@ -100,11 +100,12 @@ p{
 	height: 108px;
 	background: rgba(0,0,0,0.38);
 	margin: 0 auto;
-	overflow: hidden;
+	//overflow: hidden;
 }
 
 .logo{
 	width: 25.2%;
+	min-width: 320px;
 	height: 100%;
 	float: left;
 }
@@ -132,6 +133,12 @@ p{
 	padding-top: 27px;
 }
 
+.text__block a{
+	text-decoration:none;
+	color:#fff;
+	margin: 0;
+}
+
 .text__block h1{
 	font-size: 37px;
 	line-height: 35px;
@@ -142,19 +149,88 @@ p{
 	font-size: 11.5px;
 }
 
-
 .center{
-	width: 52.6%;
+	width: 70.8%;
 	height: 100%;
-	background: #ccc;
 	float: left;
 	padding-top: 30px;
-	overflow: hidden;
+}
+
+.upp__head{
+	height: 40px;
+}
+
+.events{
+	float: left;
+	font-size: 11.5px;
+}
+
+.event__name{
+	float: left;
+}
+
+.event{
+	float: left;
+	padding-top: 2px;
+}
+
+.event ul li{
+	padding-left: 9px;
+	list-style: none;
+	line-height: 15px;
+}
+.event a{
+	text-decoration: none;
+	color: #9ec2fe;
+}
+.event a:hover{
+	color: #cbdeff;
 }
 
 .contacts{
-	width: 22.2%;
-	height: 100%;
-	background: #ccc;
+	margin:-10px 0 0 0;
+	float: right;
+}
+.address{
 	float: left;
+	margin-right: 20px;
+	margin-top: 5px; 
+}
+.address i{
+	display: block;
+	margin: 3px 2px 0 0;
+	width: 14px;
+	height: 15px;
+	float: left;
+	background: url(../img/icon/location.png) no-repeat;
+}
+.address:hover i{
+	background: url(../img/icon/location_h.png) no-repeat;
+}
+.phone{
+	float: left;
+	margin-right: 20px;
+	margin-top: 6px; 
+}
+.phone i{
+	display: block;
+	margin: 3px 5px 0 0;
+	width: 14px;
+	height: 14px;
+	float: left;
+	background: url(../img/icon/phone.png) no-repeat;
+}
+.phone:hover i{
+	background: url(../img/icon/phone_h.png) no-repeat;
+}
+.social{
+	float: left;
+}
+.social ul li{
+	margin-right: 8px;
+	float: left;
+	list-style: none;
+}
+.social ul li:last-child{
+	margin-right: 0;
 }

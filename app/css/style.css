@@ -416,3 +416,61 @@ body {
 .whoarewe h2{
 	padding-bottom: 25px;
 }
+
+.advantages{
+	height: 330px;
+	padding: 27px 0;
+	background: #e7e7e7;
+}
+.advset{
+	height: 100%;
+}
+
+.advblock {
+	height: 100%;
+	background: #d9d9d9;
+}
+.advblock:hover {
+	background: #dedede;
+}
+.advblock:hover .adv__head{
+	background: #7bbbf6;
+}
+
+.adv__head{
+	height: 60px;
+	color: #000;
+	background: #b4cade;
+	font-size: 19px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 20px;
+	-webkit-transition: background  ease-out 0.4s;
+	-moz-transition: background  ease-out 0.4s;
+	-ms-transition: background  ease-out 0.4s;
+	-o-transition: background  ease-out 0.4s;
+	transition: background  ease-out 0.4s;
+}
+
+.adv1__img{
+	height: 62px;
+	background: url(../img/icon/good.png) no-repeat center;
+	margin-top: 20px;
+}
+.adv2__img{
+	height: 62px;
+	background: url(../img/icon/mans.png) no-repeat center;
+	margin-top: 24px;
+}
+.adv3__img{
+	height: 62px;
+	background: url(../img/icon/airplan.png) no-repeat center;
+	margin-top: 16px;
+}
+
+.adv__content{
+	height: 100%;
+	text-align: center;
+	padding: 17px 22px;
+}
+

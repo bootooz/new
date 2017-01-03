@@ -364,12 +364,53 @@ body {
 .header__content span{
 	color:#cee0ff;
 }
+.header__content .p1{
+	font-size: 65px;
+	font-weight: 900;
+	margin:0 0 0 -10%;
+}
+.header__content .p2{
+	margin:8px 0 0px 30%;
+}
+.header__content .p3{
+	margin:-15px 0 0px 54%;
+}
 
 @media screen and (max-width: 1240px) {
 	/*For screen and width <= 1240px*/
+	.head{
+		height: 520px;
+		background-size: cover;
+		padding-top: 17px;
+	}
+
 	.header{
 		margin-bottom: 35px;
 	}
+
+	.header__content .container{
+		font-size: 25px;
+		line-height: 38px;
+		background: none;
+		color:#a1c4ff;
+		text-align: center;
+	}
+	.header__content span{
+		color:#cee0ff;
+	}
+	.header__content .p1{
+		font-size: 65px;
+		font-weight: 900;
+		margin:0 0 0 -10%;
+	}
+	.header__content .p2{
+		margin:8px 0 0px 30%;
+	}
+	.header__content .p3{
+		margin:-15px 0 0px 54%;
+	}
+
+	
 	.image{
 		width: 80px;
 		height: 100%;
@@ -405,6 +446,7 @@ body {
 	.nav ul li a{font-size: 14px;}
 }
 
+
 /*-------------------------CONTENT-------------------------*/
 .whoarewe{
 	min-height: 165px;
@@ -413,21 +455,29 @@ body {
 	color: #fff;
 	padding: 30px 0 20px 0;
 }
+.whoarewe .container {
+	max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .whoarewe h2{
 	padding-bottom: 25px;
 }
 
 .advantages{
-	height: 330px;
-	padding: 27px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 7px 0;
+	min-height: 330px;
 	background: #e7e7e7;
-}
-.advset{
-	height: 100%;
 }
 
 .advblock {
-	height: 100%;
+	flex-basis: 300px;
+
+	margin: 7px 20px;
 	background: #d9d9d9;
 }
 .advblock:hover {
@@ -436,7 +486,6 @@ body {
 .advblock:hover .adv__head{
 	background: #7bbbf6;
 }
-
 .adv__head{
 	height: 60px;
 	color: #000;
@@ -451,7 +500,6 @@ body {
 	-o-transition: background  ease-out 0.4s;
 	transition: background  ease-out 0.4s;
 }
-
 .adv1__img{
 	height: 62px;
 	background: url(../img/icon/good.png) no-repeat center;
@@ -469,8 +517,6 @@ body {
 }
 
 .adv__content{
-	height: 100%;
 	text-align: center;
 	padding: 17px 22px;
 }
-

@@ -85,6 +85,7 @@ body {
 	height: 666px;
 	background: url(../img/photo/head_bg.jpg) no-repeat;
 	background-size: cover;
+	background-position: center;
 	padding-top: 17px;
 }
 
@@ -376,11 +377,12 @@ body {
 	margin:-15px 0 0px 54%;
 }
 
+.low{display: none;}
+
 @media screen and (max-width: 1240px) {
 	/*For screen and width <= 1240px*/
 	.head{
 		height: 520px;
-		background-size: cover;
 		padding-top: 17px;
 	}
 
@@ -445,6 +447,100 @@ body {
 	
 	.nav ul li a{font-size: 14px;}
 }
+@media screen and (max-width: 955px){
+	.header{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+
+		height: auto;
+		padding-top: 5px;
+	}
+	.header * {float: unset; clear: unset; width: auto; height: unset; margin: 0; padding: 0; position: static; }
+	
+	.logo{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+	}
+	.img__block{
+		width: 55px;
+		margin-right: 10px;
+	}
+	.img__block .image{
+		height: 55px;
+	}
+
+	.upp__head{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+	.events, .contacts{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		text-align: center;
+		margin: 10px;
+	}
+	
+	.event__name{margin-right: 10px;}
+	.event ul li {
+    	padding-left: 0;
+	}
+
+	.address, .phone{ margin-right: 10px;}
+}
+@media screen and (max-width: 720px){
+	.header__content .container{
+		width: 95%;
+		margin: 0 auto;
+		padding: 10px;
+		background: rgba(0,0,0,0.4);
+	}
+	.header__content .p1{
+		font-size: 46px;
+		font-weight: 900;
+		margin:0;
+		margin-top: 10px;
+	}
+	.header__content .p2{
+		font-size: 20px;
+		margin:0;
+	}
+	.header__content .p3{
+		font-size: 20px;
+		margin:0;
+		margin-top: -15px;
+	}
+
+	.high{display: none;}
+	.low{display: block;}
+	.low li {width: 100%;text-align: center;}
+	.low ul li a{border-left: 1px solid #28294c;}
+	.low ul li a .m1{
+		position: absolute;
+		margin-left: -45px;
+		left: 50%;
+		top: 7px;
+		background: url(../img/icon/flag.png) no-repeat;
+	}
+}
+@media screen and (max-width: 325px){
+	.address{font-size: 13px;}
+}
 
 
 /*-------------------------CONTENT-------------------------*/
@@ -471,7 +567,7 @@ body {
 	flex-wrap: wrap;
 
 	padding: 7px 0;
-	min-height: 330px;
+	min-height: 290px;
 	background: #e7e7e7;
 }
 

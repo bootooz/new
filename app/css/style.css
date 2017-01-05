@@ -130,25 +130,21 @@ body {
 	float: left;
 	padding-top: 27px;
 }
-.text{
-	max-width: 165px;
-}
 
-.text a{
-	display: block;
-	width: 100%;
+.text__block a{
+	display: inline-block;
 	text-decoration:none;
 	color:#fff;
 	margin: 0;
 }
 
-.text h1{
+.text__block h1{
 	font-size: 37px;
 	line-height: 35px;
 	margin-bottom: -5px;
 }
 
-.text span{
+.text__block span{
 	font-size: 11.5px;
 }
 
@@ -562,12 +558,12 @@ body {
 		background-size: contain;
 	}
 
-	.text h1{
+	.text__block h1{
 		font-size: 31.5px;
 		line-height: 32px;
 	}
 
-	.text span{
+	.text__block span{
 		font-size: 9.8px;
 	}
 
@@ -577,12 +573,12 @@ body {
 }
 @media screen and (max-width: 1024px) {
 	/*For screen and width <= 1024px*/
-	.text h1{
+	.text__block h1{
 		font-size: 28px;
 		line-height: 32px;
 	}
 
-	.text span{
+	.text__block span{
 		font-size: 8.7px;
 	}
 	
@@ -594,8 +590,9 @@ body {
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
-
+		
 		height: auto;
+		margin-bottom: 18px;
 		padding-top: 5px;
 	}
 	.header * {float: unset; clear: unset; width: auto; height: unset; margin: 0; padding: 0; position: static; }
@@ -609,11 +606,20 @@ body {
 		align-items: center;
 	}
 	.img__block{
-		width: 55px;
+		width: 75px;
 		margin-right: 10px;
 	}
 	.img__block .image{
-		height: 55px;
+		height: 75px;
+	}
+
+	.text__block h1{
+		font-size: 40px;
+		line-height: 40px;
+	}
+
+	.text__block span{
+		font-size: 12.5px;
 	}
 
 	.upp__head{
@@ -643,6 +649,24 @@ body {
 	}
 
 	.address, .phone{ margin-right: 10px;}
+
+	.social ul li:last-child{
+		margin-right: 0px;
+	}
+
+	.header__content .p1{
+		font-size: 45px;
+		font-weight: 900;
+		margin:0 0 0 -7%;
+	}
+	.header__content .p2{
+		font-size: 22px;
+		margin: 0 0 0px 30%;
+	}
+	.header__content .p3{
+		font-size: 22px;
+		margin:-15px 0 0px 54%;
+	}
 }
 @media screen and (max-width: 880px){
 	.skier{display: none;}

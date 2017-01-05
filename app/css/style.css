@@ -678,6 +678,16 @@ body {
 	    padding-right: 10px;
 	}
 }
+@media screen and (max-width: 880px){
+	.skier{display: none;}
+	.board{display: none;}
+	.whoarewe .container {
+		position: relative;
+		width: 95%;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	}
+}
 @media screen and (max-width: 720px){
 
 	.head{height: 450px;}

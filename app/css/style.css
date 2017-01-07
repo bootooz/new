@@ -189,6 +189,7 @@ body {
 .contacts{
 	margin:-10px 0 0 0;
 	float: right;
+	font-size: 14px;
 }
 .address{
 	float: left;
@@ -225,7 +226,7 @@ body {
 .social{
 	float: left;
 }
-.social img {width: 30px;}
+.social img {width: 25px;}
 
 .social ul li{
 	margin-right: 8px;
@@ -425,7 +426,9 @@ body {
 
 	padding: 7px 0;
 	min-height: 290px;
-	background: #e7e7e7;
+	/*background: #e7e7e7;*/
+	background: #d6d6d6;
+
 }
 
 .advblock {
@@ -511,6 +514,107 @@ body {
 	text-align: center;
 	padding: 17px 22px;
 }
+
+.timetable{
+	position: relative;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+.timetable .bg{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: url(../img/photo/tour_bg2.jpg);
+	background-attachment: fixed;
+}
+
+.timetable .title{
+	text-align: center;
+	padding: 35px 0 15px 0;
+	font-size: 26px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.timetable .content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	height: 100%;
+}
+.timetable .item{
+	padding: 15px 2%;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+}
+.timetable .item:hover img{
+	border: 5px solid #25f883;/*#6ad99b*/
+}
+.timetable .item:hover .place a{
+	border-bottom: 2px dashed #fff;
+}
+.timetable .imglink {
+	display:inline-block;
+	border-radius: 50%;
+}
+.timetable img {
+	display:inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	border-radius: 50%;
+	border: 5px solid #94cde4;
+	transition: border 0.5s;
+}
+.timetable .place{
+	font-size: 22px;
+	padding: 10px 0 6px 0;
+}
+.timetable .place a{
+	display: inline-block;
+	text-decoration: none;
+	color:#fff;
+	border-bottom: 2px dashed transparent;
+	padding-bottom: 6px;
+	transition: 0.4s;
+}
+.timetable .date, .price{
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 5px;
+}
+
+.timetable .button__wraper{
+	text-align: center;
+	padding: 30px 0;
+}
+.timetable .button{
+	box-sizing: padding-box;
+	display: inline-block;
+	background: #579cbf;
+	border-radius: 5px;
+	border-bottom: 4px solid #236688;
+	font-size: 14px;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #003f5f;
+	padding: 12px 60px;
+}
+.timetable .button:hover{
+	color:#2d5678;
+	background: #4aabdd;
+	border-bottom: 4px solid #467088;
+}
+.timetable .button:active{
+	margin-top: 2px;
+	border-bottom: 2px solid #5388a7;
+}
+
+
 
 
 

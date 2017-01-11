@@ -195,33 +195,25 @@ body {
 	float: left;
 	margin-right: 20px;
 	margin-top: 5px; 
+	padding-left: 16px;
+	background: url(../img/icon/location_sprite.png) no-repeat;
+	background-position: 0px 3px;
+
 }
-.address i{
-	display: block;
-	margin: 3px 2px 0 0;
-	width: 14px;
-	height: 15px;
-	float: left;
-	background: url(../img/icon/location.png) no-repeat;
-}
-.address:hover i{
-	background: url(../img/icon/location_h.png) no-repeat;
+.address:hover {
+	background-position: 0 -39px;
 }
 .phone{
 	float: left;
 	margin-right: 20px;
 	margin-top: 6px; 
+	padding-left: 19px;
+	background: url(../img/icon/phone_sprite.png) no-repeat;
+	background-position: 0 3px;
 }
-.phone i{
-	display: block;
-	margin: 3px 5px 0 0;
-	width: 14px;
-	height: 14px;
-	float: left;
-	background: url(../img/icon/phone.png) no-repeat;
-}
-.phone:hover i{
-	background: url(../img/icon/phone_h.png) no-repeat;
+
+.phone:hover {
+	background-position: 0 -40px;
 }
 .social{
 	float: left;
@@ -366,6 +358,7 @@ body {
 	font-size: 65px;
 	font-weight: 900;
 	margin:0 0 0 -10%;
+	text-shadow: 4px 0px 4px #5a74a5;
 }
 .header__content .p2{
 	margin:0px 0 0px 25%;
@@ -381,6 +374,7 @@ body {
 
 /*-------------------------CONTENT-------------------------*/
 .whoarewe{
+	position: relative;
 	min-height: 165px;
 	text-align: center;
 	background: #2a3d5e;
@@ -416,9 +410,20 @@ body {
 }
 .whoarewe h2{
 	padding-bottom: 25px;
+	text-shadow: 0px 1px 3px #01173e;
+}
+.whoarewe:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: -6px;
+	height: 6px;
+	width: 100%;
+	background: url(../img/icon/waw_triangle_up.png) repeat-x;
 }
 
 .advantages{
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -427,13 +432,24 @@ body {
 	padding: 7px 0;
 	min-height: 290px;
 	/*background: #e7e7e7;*/
-	background: #d6d6d6;
+	background: #d6d6d6 url(../img/icon/collage.png);
 
 }
+.advantages:after{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -6px;
+	height: 6px;
+	width: 100%;
+	background: url(../img/icon/adv_triangle_b.png) repeat-x;
+}
+
 
 .advblock {
 	flex-basis: 27%;
 	
+	cursor: pointer;
 	min-width: 350px;
 	margin: 7px 20px;
 	background: #d9d9d9;
@@ -452,21 +468,24 @@ body {
 }
 .adv__head{
 	height: 60px;
-	color: #333;
-	//background: #b4cade;
-	background: #98c0e6;
-	font-size: 19px;
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 20px;
-	-webkit-transition: background  ease-out 0.3s;
-	-moz-transition: background  ease-out 0.3s;
-	-ms-transition: background  ease-out 0.3s;
-	-o-transition: background  ease-out 0.3s;
-	transition: background  ease-out 0.3s;
+    color: #a1c4ff;
+    background: #315c8c;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    -webkit-transition: background ease-out 0.3s;
+    -moz-transition: background ease-out 0.3s;
+    -ms-transition: background ease-out 0.3s;
+    -o-transition: background ease-out 0.3s;
+    transition: background ease-out 0.3s;
+    text-shadow: 0px 0px 1px #747480;
 }
 .advblock:hover .adv__head{
-	background: #7bbbf6;
+	background: #4a7fb9;
+	color:#eee;
+	text-shadow: 0px 0px 2px #007aca;
 }
 
 .adv1__img{
@@ -536,6 +555,7 @@ body {
 	font-size: 26px;
 	font-weight: 500;
 	color: #fff;
+	text-shadow: 0px 1px 3px black;
 }
 
 .timetable .content{
@@ -572,6 +592,7 @@ body {
 .timetable .place{
 	font-size: 22px;
 	padding: 10px 0 6px 0;
+	text-shadow: 1px 1px 2px black;
 }
 .timetable .place a{
 	display: inline-block;
@@ -613,8 +634,6 @@ body {
 	margin-top: 2px;
 	border-bottom: 2px solid #5388a7;
 }
-
-
 
 
 
@@ -753,6 +772,8 @@ body {
 	}
 
 	.address, .phone{ margin-right: 10px;}
+	.address{padding-left: 14px;}
+	.phone{padding-left: 19px;}
 
 	.social ul li:last-child{
 		margin-right: 0px;
